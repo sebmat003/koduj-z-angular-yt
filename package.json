@@ -1,5 +1,5 @@
 {
-  "name": "loader-directive",
+  "name": "code",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -15,9 +15,19 @@
     "@angular/compiler": "^18.0.0",
     "@angular/core": "^18.0.0",
     "@angular/forms": "^18.0.0",
+    "@angular/material": "^18.2.2",
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
+    "@ngneat/spectator": "^18.0.2",
+    "@ngrx/effects": "^18.0.2",
+    "@ngrx/entity": "^18.0.2",
+    "@ngrx/store": "^18.0.2",
+    "@ngrx/store-devtools": "^18.0.2",
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "jest-marbles": "^3.1.0",
+    "jest-preset-angular": "^14.2.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
