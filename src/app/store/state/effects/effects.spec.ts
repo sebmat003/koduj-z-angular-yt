@@ -5,6 +5,7 @@ import { Observable, of } from 'rxjs';
 import { ProductEffects } from './effects';
 import { ProductsService } from '../services/product.service';
 import { ProductActions } from '../actions/actions';
+import { expect } from '@jest/globals';
 
 describe('Product Effects', () => {
   let effects: ProductEffects;

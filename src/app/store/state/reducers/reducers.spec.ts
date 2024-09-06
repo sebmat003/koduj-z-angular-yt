@@ -1,6 +1,6 @@
+import { convertArrayToEntityState } from './../../utils/utils';
 import { createEntityAdapter, EntityAdapter, EntityState } from '@ngrx/entity';
 import { Product } from '../../models/store.models';
-import { convertArrayToEntityState } from '../../../9-utils/utils';
 import { productsReducer } from './reducers';
 import { mockProducts } from '../../testing/product-testing.data';
 import { ProductActions } from '../actions/actions';
