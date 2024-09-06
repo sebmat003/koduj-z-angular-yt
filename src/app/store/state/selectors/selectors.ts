@@ -11,3 +11,19 @@ export const selectAllProducts = createSelector(
     return Object.values(products.entities) as (Product | undefined)[];
   }
 );
+
+export const selectProductsLength = createSelector(
+  selectProductsFeature,
+  (products: EntityState<Product>): number => {
+    return Object.values(products.entities).length;
+  }
+);
+
+export const selectSumOfAllProducts = createSelector(
+  selectProductsFeature,
+  (products: EntityState<Product>): number => {
+    return Object.values(products.entities)
+      .map((product) => product.price)
+      .reduce((prev, curr) => prev + curr);
+  }
+);
