@@ -1,11 +1,16 @@
 import { Component } from '@angular/core';
-import { NgrxStoreUsageComponent } from "./store/ngrx-store-usage.component";
+import { InputNumberComponent } from './custom-control/input-number/input-number.component';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  imports: [NgrxStoreUsageComponent],
+  imports: [InputNumberComponent, ReactiveFormsModule],
 })
-export class AppComponent {}
+export class AppComponent {
+  form = new FormGroup({
+    control: new FormControl(),
+  });
+}
