@@ -1,16 +1,12 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
-import { PipeUsageComponent } from './custom-pipe/pipe-usage/pipe-usage.component';
+import { ParentComponent } from './ng-template-ng-content/ng-content-usage.component';
+import { NgTemplateUsageComponent } from "./ng-template-ng-content/ng-template-usage.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  imports: [PipeUsageComponent],
+  imports: [ParentComponent, NgTemplateUsageComponent],
 })
-export class AppComponent {
-  form = new FormGroup({
-    control: new FormControl(),
-  });
-}
+export class AppComponent {}

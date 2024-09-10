@@ -1,0 +1,18 @@
+<p>1</p>
+<div *ngIf="false; else noData"></div>
+
+<ng-template #noData>No Data</ng-template>
+
+<p>2</p>
+
+What's your name?
+
+<p *ngTemplateOutlet="name; context: { $implicit: 'Michael' }"></p>
+<p *ngTemplateOutlet="name; context: { $implicit: 'Adam' }"></p>
+<p *ngTemplateOutlet="name; context: { $implicit: 'Eva' }"></p>
+
+<ng-template #name let-name>
+  <p>
+    My name is <b>{{ name }}</b>
+  </p>
+</ng-template>
