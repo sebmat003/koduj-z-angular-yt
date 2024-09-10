@@ -1,0 +1,4 @@
+@for (account of accounts; track $index) {
+<p>Balance:</p>
+{{ account.balance | balance : account.currency : true }}
+}

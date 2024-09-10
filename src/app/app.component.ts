@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { InputNumberComponent } from './custom-control/input-number/input-number.component';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
+import { PipeUsageComponent } from './custom-pipe/pipe-usage/pipe-usage.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  imports: [InputNumberComponent, ReactiveFormsModule],
+  imports: [PipeUsageComponent],
 })
 export class AppComponent {
   form = new FormGroup({
