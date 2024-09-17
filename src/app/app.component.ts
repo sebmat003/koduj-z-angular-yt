@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { ValidatorUsageComponent } from './custom-validator/validator-usage.component';
+import { VirtualScrollComponent } from './virtual-scroll/virtual-scroll.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  imports: [ValidatorUsageComponent],
+  imports: [VirtualScrollComponent],
 })
 export class AppComponent {}
