@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { VirtualScrollComponent } from './virtual-scroll/virtual-scroll.component';
+import { TranslateSiteComponent } from './translate-site/translate-site.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  imports: [VirtualScrollComponent],
+  imports: [TranslateSiteComponent],
 })
 export class AppComponent {}
